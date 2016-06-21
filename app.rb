@@ -80,21 +80,21 @@ end
 
 
 get '/showusers' do
-  erb	"Hello World"
+  erb	:showusers
 end
 
 
-get '/contacts' do
-	erb :contacts
-end
+# get '/contacts' do
+# 	erb :contacts
+# end
 
-post '/contacts' do
-	@text = params[:text]
-	@username = params[:username]
-	@mail = params[:mail]
+# post '/contacts' do
+# 	@text = params[:text]
+# 	@username = params[:username]
+# 	@mail = params[:mail]
 
 
-	erb "We'll answer your mail, #{@username}"
-end
+# 	erb "We'll answer your mail, #{@username}"
+# end
 
 
